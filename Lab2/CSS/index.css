@@ -1,0 +1,89 @@
+
+.intro{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3ch;
+    border-width: 2cm;
+    color: #ffffff;
+    margin-top: 0px;
+
+}
+
+body{
+    background-color: rgb(238, 203, 4);
+}
+.menu{
+    padding:7px;
+   display:flex;
+    justify-content: center;
+}
+#logo{
+    height: 7px ;
+    width: 7px;
+}
+.button {
+    padding: 7px 7px 7px 7px;
+    margin-left: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#ee190a;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 30px;
+    border: 3px solid rgb(248, 237, 237);
+  }
+  .button:hover
+  {
+    padding: 7px 9px 7px 9px;
+    margin-left: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#2a14f3;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 30px;
+    border: 3px solid rgb(240, 217, 217);
+  }
+#logo{
+    width: 70px;
+    height: 70px;
+}
+
+/*combined selectors test 1*/
+header img 
+{
+    display:block;
+    border: 3px solid black;
+    align-items: right;
+}
+
+#welcome_text{
+    font-size: 3cm;
+    font-family: cursive;
+    font-style:normal;
+    color: red;
+    
+}
+
+p{
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 1px;
+    margin-inline-end: 1px;
+}
+
+#header{
+    width: 208px;
+}
+
+@media all and (max-width:1440px){ /*We can leave out the 'all'*/
+    body {
+        color:blue;
+    }
+}
+
+@media (orientation:landscape) ,(min-width:300px)/*Based on orientation of the text. Comma meanes 'or'*/
+{
+    #welcome_text{
+        color: green;
+    }
+}
