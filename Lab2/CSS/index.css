@@ -75,15 +75,22 @@ p{
     width: 208px;
 }
 
-@media all and (max-width:1440px){ /*We can leave out the 'all'*/
-    body {
-        color:blue;
-    }
-}
 
-@media (orientation:landscape) ,(min-width:300px)/*Based on orientation of the text. Comma meanes 'or'*/
-{
+/*Media querries*/
+
+@media (max-width:480px){
     #welcome_text{
-        color: green;
+        font-size:70px;
+        font-family: cursive;
+        font-style:normal;
+        color: rgb(251, 255, 0);
+    }
+    body{
+       background-color:rgb(216, 116, 98);
+        
+    }
+    #logo{
+        width: 10%;
+        height:10%;
     }
 }
