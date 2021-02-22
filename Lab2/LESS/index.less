@@ -1,0 +1,47 @@
+//Variables
+@primary-color:rgb(206, 161, 14);
+@secondary-color:rgb(200,100,50);
+@primary-backround-color:rgb(205,180,12);
+@secondary-backround-color:#bf3d1d;
+@btn-color:#ede4e1;
+
+// Media querries
+@media screen and (max-width:480px){
+    body{
+        background-color: @secondary-color;
+        
+    }
+    #logo{
+        width: 60px;
+        height: 60px;
+        display: flex;
+        float: right;
+        border: 1px solid black;
+    }
+    #welcome_text{
+        font-size: 80px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-style: oblique;
+        color:  @primary-color;
+        display:contents;
+        align-content: center;
+    }
+    .menu{
+        padding:30px,0px;
+        display: block;
+        border:2px @btn-color;
+    }
+    .button{
+        border: @btn-color 3px solid;
+        padding:10px,10px;
+        margin:7px;
+        display: flex;
+        float: left;
+        font-style: normal;
+        font-size: 35px;
+        color:@btn-color;
+        &::after{
+            color:black;
+        }
+    }
+}
