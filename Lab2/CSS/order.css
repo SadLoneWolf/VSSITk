@@ -45,37 +45,32 @@ img{
   height:300px;
 }
 
-table tr th{
+.container{
+  display: flex;
+  flex-direction: row;
+  color:blue;
+  font-size: large;
+  font-style: oblique;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 20px;
+
+}
+h2{
+  margin:auto;
+  margin-top: 1.3em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: oblique;
+  font-size:xx-large;
   color: #ee190a;
-  padding: 10px 10px;
-}
 
-table tr td{
-  
 }
-
-table tr td h4 {
+.row{
+  margin:auto;
+  background-color: white;
+}
+div img ul li 
+{
+  font-size: medium;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 25px;
-  color:#ee190a;
-}
-
-table tr td h4 ul li{
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 13px;
-  color:#0a87ee;
-}
-
-.products{
-  background-color: rgba(255, 255, 255, 0.767);
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
+  font-style: oblique;
+  color: #2a14f3;
 }
