@@ -4,6 +4,7 @@
 @primary-backround-color:rgb(205,180,12);
 @secondary-backround-color:#bf3d1d;
 @btn-color:#ede4e1;
+@big-screen-color:rgb(205, 12, 12);
 
 // Media querries
 @media screen and (max-width:480px){
@@ -12,14 +13,14 @@
         
     }
     #logo{
-        width: 60px;
-        height: 60px;
+        width: 15%;
+        height: 15%;
         display: flex;
         float: right;
         border: 1px solid black;
     }
     #welcome_text{
-        font-size: 80px;
+        font-size: 25%;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         font-style: oblique;
         color:  @primary-color;
@@ -33,7 +34,7 @@
     }
     .button{
         border: @btn-color 3px solid;
-        padding:10px,10px;
+        padding:5%,5%;
         margin:7px;
         display: flex;
         float: left;
@@ -43,5 +44,122 @@
         &::after{
             color:black;
         }
+    }
+}
+
+@media screen and (max-width:800px){
+    body{
+        background-color: @secondary-color;
+        
+    }
+    #logo{
+        width: 15%;
+        height: 15%;
+        display: flex;
+        float: right;
+        border: 1px solid black;
+    }
+    #welcome_text{
+        font-size: 25%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-style: oblique;
+        color:  @primary-color;
+        display:contents;
+        align-content: center;
+    }
+    .menu{
+        padding:30px,0px;
+        display: block;
+        border:2px @btn-color;
+    }
+    .button{
+        border: @btn-color 3px solid;
+        padding:5%,5%;
+        margin:7px;
+        display: flex;
+        float: left;
+        font-style: normal;
+        font-size: 35px;
+        color:@btn-color;
+        &::after{
+            color:black;
+        }
+    }
+}
+
+@media screen and (max-width:1024px)
+{
+    .intro
+    {
+      text-align : center ;
+      font-family: Arial, Helvetica , sans-serif ;
+      font-size : 3ch;
+      border-width : 2cm;
+      color : #ffffff;
+      margin-top: 0px;
+    }
+    body
+    {
+      background-color : rgb(238, 203,4);
+    }
+    .menu
+    {
+      padding:7px;
+      display:flex;
+      justify-content: center;
+    }
+    #logo
+    {
+      height: 7px;
+      width: 7px;
+    }
+    .button
+    {
+      padding: 7px 7px 7px 7px;
+      margin-left: 20px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color:#ee190a;
+      font-style: normal;
+      text-decoration: none;
+      font-size: 30px;
+      border: 3px solid rgb(248, 237, 237);
+    }
+    .button:hover {
+      padding: 7px 9px 7px 9px;
+      margin-left: 20px;
+      font-family: Verdana , Geneva, Tahoma , sans-serif;
+      color:#2a14f3;
+      font-style: normal;
+      text-decoration: none;
+      font-size: 30px;
+      border : 3px solid rgb(240, 217, 217);
+    }
+    #logo
+    {
+      width: 70px;
+      height: 70px;
+    }
+    /*combined selectors test 1*/
+    header img
+    {
+      display:block;
+      border: 3px solid black;
+      align-items: right;
+    }
+    #welcome_text{
+      font-size: 3cm;
+      font-family: cursive;
+      font-style:normal;
+      color: red;
+      }
+    p{
+      display: block;
+      margin-block-start: 0em;
+      margin-block-end: 0em;
+      margin-inline-start: 1px;
+      margin-inline-end: 1px;
+    }
+    #header{
+      width: 208px;
     }
 }
