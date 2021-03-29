@@ -12,74 +12,35 @@
 @picture-radius:17%;
 
 //Phones
-@media screen and(min-width:480px)
-{
-    body{
-        background-color: @primary-backround-color;
-    }
-    .menu{
-        padding:5%;
-        display:flex;
-        flex-direction: row;
-        justify-content:left;
-    }
-    #big_intro{
-        font-size: small;
-        font-family: cursive;
-        font-style: normal;
-        color:@big-screen-header-text-color
-       
-    }
-    #intro{
-        background-color: rgba(226, 141, 29, 0.658);
-        margin-left: 350px;
-        margin-right: 350px;
-    }
-    #small_intro{
-        font-size: small;
-        font-family: cursive;
-        font-style: normal;
-        
-    }
-    .container{
-        display: flex;
-        flex-direction: row;
-    }
-    h2{
-        margin:auto;
-        margin-top: 1.3em;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      font-style: oblique;
-      font-size:xx-large;
-      color: #ee190a;
-    }
-    #big_Img{
-        width: 30%;
-        height: 30%;
-    }
-    #game{
-        height: 32%;
-    }
-    
-}
-
-//Tablets
-@media screen and (min-width:800px)
+@media screen and(max-width:480px)
 {
     body{
         background-color: @secondary-backround-color;
     }
-    .menu{
-        padding:5%;
-        display:flex;
-        flex-direction: row;
-        justify-content:left;
-    }
+    .menu {
+        border: 2px @btn-color;
+        width: 20%;
+        height: 20%;
+      }
+      .button{
+        border: @btn-color 3px solid;
+        padding:5%,5%;
+        margin:7px;
+        display: flex;
+        float: left;
+        font-style: normal;
+        font-variant: normal;
+        font-size: 20%;
+        color : @btn-color;
+        &::after{
+            color:black;
+        }
+      }
     #big_intro{
         font-size: small;
         font-family: cursive;
         font-style: normal;
-        color:@big-screen-header-text-color
+        color:@primary-color;
        
     }
     #intro{
@@ -103,7 +64,7 @@
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       font-style: oblique;
       font-size:xx-large;
-      color: #ee190a;
+      color: #65ee0a;
     }
     #big_Img{
         width: 30%;
@@ -112,80 +73,158 @@
     #game{
         height: 32%;
     }
-    
+    #logo{
+        width: 15%;
+        height: 15%;
+        display: flex;
+        float: right;
+        border: 1px solid black;
+    }
+}
+
+//Tablets
+@media screen and (max-width:800px)
+{
+    body{
+        background-color: @secondary-backround-color;
+    }
+    .menu {
+        border: 2px @btn-color;
+        width: 20%;
+        height: 20%;
+      }
+      .button{
+        border: @btn-color 3px solid;
+        padding:5%,5%;
+        margin:7px;
+        display: flex;
+        float: left;
+        font-style: normal;
+        font-variant: normal;
+        font-size: 20%;
+        color : @btn-color;
+        &::after{
+            color:black;
+        }
+      }
+    #big_intro{
+        font-size: small;
+        font-family: cursive;
+        font-style: normal;
+        color:@primary-color;
+       
+    }
+    #intro{
+        background-color: rgba(226, 141, 29, 0.658);
+        margin-left: 350px;
+        margin-right: 350px;
+    }
+    #small_intro{
+        font-size: small;
+        font-family: cursive;
+        font-style: normal;
+        
+    }
+    .container{
+        display: flex;
+        flex-direction: row;
+    }
+    h2{
+        margin:auto;
+        margin-top: 1.3em;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-style: oblique;
+      font-size:xx-large;
+      color: #78ee0a;
+    }
+    #big_Img{
+        width: 30%;
+        height: 30%;
+    }
+    #game{
+        height: 32%;
+    }
+    #logo{
+        width: 15%;
+        height: 15%;
+        display: flex;
+        float: right;
+        border: 1px solid black;
+    }
 }
 
 //Big screen
 @media screen and (min-width:1024px)
 {
     
-body{
-    background-image: url(../Images/background.jpg);
-}
-.menu{
-    padding:7px;
-   display:flex;
-    justify-content: center;
-}
-.button {
-    padding: 7px 7px 7px 7px;
-    margin-left: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color:#ee190a;
-    font-style: normal;
-    text-decoration: none;
-    font-size: 30px;
-    border: 3px solid rgb(248, 237, 237);
-  }
-  .button:hover
-  {
-    padding: 7px 9px 7px 9px;
-    margin-left: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color:#2a14f3;
-    font-style: normal;
-    text-decoration: none;
-    font-size: 30px;
-    border: 3px solid rgb(240, 217, 217);
-  }
-#big_intro{
-    font-size: large;
-    font-family: cursive;
-    font-style: italic;
-    color: rgba(238, 224, 32, 0.966);
-   
-}
-#intro{
-    background-color: rgba(226, 141, 29, 0.658);
-    margin-left: 350px;
-    margin-right: 350px;
-}
-#small_intro{
-    font-size: large;
-    font-family: cursive;
-    font-style: italic;
-    
-}
-.container{
-    display: flex;
-    flex-direction: row;
-}
-h2{
-    margin:auto;
-    margin-top: 1.3em;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-style: oblique;
-  font-size:xx-large;
-  color: #ee190a;
-}
-.imges{
-    margin: auto;
-}
-#big_Img{
-    width: 30%;
-    height: 30%;
-}
-#game{
-    height: 32%;
-}
+
+    body{
+        background-image: url(../Images/background.jpg);
+    }
+    .menu{
+        padding:7px;
+       display:flex;
+        justify-content: center;
+    }
+    .button {
+        padding: 7px 7px 7px 7px;
+        margin-left: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color:#ee190a;
+        font-style: normal;
+        text-decoration: none;
+        font-size: 30px;
+        border: 3px solid rgb(248, 237, 237);
+      }
+      .button:hover
+      {
+        padding: 7px 9px 7px 9px;
+        margin-left: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color:#2a14f3;
+        font-style: normal;
+        text-decoration: none;
+        font-size: 30px;
+        border: 3px solid rgb(240, 217, 217);
+      }
+    #big_intro{
+        font-size: large;
+        font-family: cursive;
+        font-style: italic;
+        color: rgba(238, 224, 32, 0.966);
+       
+    }
+    #intro{
+        background-color: rgba(226, 141, 29, 0.658);
+        margin-left: 350px;
+        margin-right: 350px;
+    }
+    #small_intro{
+        font-size: large;
+        font-family: cursive;
+        font-style: italic;
+        
+    }
+    .container{
+        display: flex;
+        flex-direction: row;
+    }
+    h2{
+        margin:auto;
+        margin-top: 1.3em;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-style: oblique;
+      font-size:xx-large;
+      color: #ee190a;
+    }
+    .imges{
+        margin: auto;
+    }
+    #big_Img{
+        width: 30%;
+        height: 30%;
+    }
+    #game{
+        height: 32%;
+    }
 }

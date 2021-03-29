@@ -1,4 +1,14 @@
-@media screen and(min-width:480px)
+//variables
+@primary-color:rgb(206, 161, 14);
+@secondary-color:rgb(200,100,50);
+@primary-backround-color:rgb(205,180,12);
+@secondary-backround-color:#bf3d1d;
+@btn-color:#ede4e1;
+@big-screen-header-text-color:rgb(205, 12, 12);
+@big-screen-normal-text-color:rgb(29, 199, 148);
+@card-background:rgb(255,255,255);
+
+@media screen and(max-width:480px)
 {
     body{
         background-color: @primary-backround-color;
@@ -29,7 +39,7 @@
     }
     .container{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
     h2{
         margin:auto;
@@ -81,7 +91,7 @@
     }
     .container{
         display: flex;
-        flex-direction: row;
+        flex-direction:column;
     }
     h2{
         margin:auto;
@@ -99,4 +109,84 @@
         height: 32%;
     }
     
+}
+
+@media screen and (max-width:1300px)
+{
+    .menu{
+        padding:7px;
+       display:flex;
+        justify-content: center;
+      }
+      body{
+          background-image: url(../Images/background.jpg);
+      }
+      
+      header img 
+      {
+          display:block;
+          border: 3px solid black;
+          align-items: right;
+      }
+      #logo{
+        width: 70px;
+        height: 70px;
+      }
+      .button {
+        padding: 7px 7px 7px 7px;
+        margin-left: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color:#ee190a;
+        font-style: normal;
+        text-decoration: none;
+        font-size: 30px;
+        border: 3px solid rgb(248, 237, 237);
+      }
+      .button:hover
+      {
+        padding: 7px 9px 7px 9px;
+        margin-left: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color:#2a14f3;
+        font-style: normal;
+        text-decoration: none;
+        font-size: 30px;
+        border: 3px solid rgb(240, 217, 217);
+      }
+      
+      
+      img{
+        width: 300px;
+        height:300px;
+      }
+      
+      .container{
+        display: flex;
+        flex-direction: row;
+        color:blue;
+        font-size: large;
+        font-style: oblique;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      
+      }
+      h2{
+        margin:auto;
+        margin-top: 1.3em;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-style: oblique;
+        font-size:xx-large;
+        color: #ee190a;
+      
+      }
+      .row{
+        margin:auto;
+        background-color: white;
+      }
+      div img ul li 
+      {
+        font-size: medium;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-style: oblique;
+        color: #2a14f3;
+      }
 }
