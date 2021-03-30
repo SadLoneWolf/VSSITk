@@ -1,4 +1,4 @@
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 800px) {
   body {
     background-color: #ffffff;
   }
@@ -20,10 +20,10 @@
     text-decoration: none;
   }
   .images_popular {
-    display: flex;
-    flex-direction: row;
+    overflow: hidden;
   }
   img {
+    float: left;
     width: 40%;
     height: 40%;
   }
@@ -40,5 +40,10 @@
   }
   #like_btn {
     float: right;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .feedback_button {
+    display: none;
   }
 }

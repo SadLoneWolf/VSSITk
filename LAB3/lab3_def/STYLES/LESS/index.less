@@ -3,7 +3,7 @@
 @rank-color:rgb(255,255,0);
 @gray-background:rgb(212,212,212);
 
-@media screen and (max-width:480px)
+@media screen and (max-width:800px)
 {
     body{
         background-color: @background-color;
@@ -28,10 +28,7 @@
     .images_popular{
         overflow: hidden;
     }
-  figure {
-        position: relative;
-        animation 10s slider infinite;
-    }
+ 
     img{
         float: left;
         width: 40%;
@@ -51,4 +48,11 @@
    #like_btn{
        float: right;
    }
+}
+
+@media screen and (min-width:1200px)
+{
+    .feedback_button{
+        display: none;
+    }
 }
