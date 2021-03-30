@@ -1,11 +1,53 @@
 @background-color:rgb(255,255,255);
-@palet-color:#0a3aa1;
+@palet-color:#4979e0;
 @rank-color:rgb(255,255,0);
+@gray-background:rgb(212,212,212);
 
-@media screen and (max-width:800px)
+@media screen and (max-width:480px)
 {
     body{
         background-color: @background-color;
     }
-    
+    h4{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 182%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .shown-area{
+        background-color:@gray-background;
+        font-size: 1.2rem;
+        padding: 1em;
+    }
+    a{
+        font-style: normal;
+        font-size: 1.2em;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-decoration: none;
+    }
+    .images_popular{
+        display: flex;
+        flex-direction: row;
+    }
+    img{
+        width: 40%;
+        height:40%;
+    }
+    strong{
+        font-size: 1.2em;
+    }
+    #like{
+        display: flex;
+        flex-direction:row-reverse;
+        justify-content:flex-end;
+    }
+    #feedback_button{
+       display: flex;
+        justify-content: center;
+         align-items: center;
+        background-color: white;
+        border-color: @palet-color;
+        color: @palet-color;
+        padding:5%;
+    }
 }
