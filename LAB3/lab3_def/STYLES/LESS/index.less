@@ -26,10 +26,14 @@
         text-decoration: none;
     }
     .images_popular{
-        display: flex;
-        flex-direction: row;
+        overflow: hidden;
+    }
+  figure {
+        position: relative;
+        animation 10s slider infinite;
     }
     img{
+        float: left;
         width: 40%;
         height:40%;
     }
@@ -41,13 +45,10 @@
         flex-direction:row-reverse;
         justify-content:flex-end;
     }
-    #feedback_button{
-       display: flex;
-        justify-content: center;
-         align-items: center;
-        background-color: white;
-        border-color: @palet-color;
-        color: @palet-color;
-        padding:5%;
-    }
+   .feedback_button{
+       margin-left: 33%;
+   }
+   #like_btn{
+       float: right;
+   }
 }

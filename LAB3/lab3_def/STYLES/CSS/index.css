@@ -35,13 +35,10 @@
     flex-direction: row-reverse;
     justify-content: flex-end;
   }
-  #feedback_button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    border-color: #4979e0;
-    color: #4979e0;
-    padding: 5%;
+  .feedback_button {
+    margin-left: 33%;
+  }
+  #like_btn {
+    float: right;
   }
 }
