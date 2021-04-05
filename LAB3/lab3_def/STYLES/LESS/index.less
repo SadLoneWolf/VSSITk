@@ -27,7 +27,7 @@
     }
     .images_popular{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
  
     img{
@@ -38,6 +38,7 @@
     strong{
         font-size: 1.2em;
     }
+
     #like{
         display: flex;
         flex-direction:row-reverse;
@@ -50,11 +51,36 @@
     float: right;
     margin-bottom: 0.2em;
    }
+   .feedback_form{
+       display: none;
+   }
+   .card{
+       background-color: azure;
+       width: 30%;
+       height: 30%;
+       margin-left:2em;
+   }
 }
 
 @media screen and (min-width:1200px)
 {
     .feedback_button{
         display: none;
+    }
+    .images_popular{
+        display: flex;
+        flex-direction: row;
+    }
+ 
+    img{
+        
+        width: 30%;
+        height: 30%;
+    }
+    .card{
+        background-color: azure;
+        width: 30%;
+        height: 30%;
+        margin-left:2em;
     }
 }
