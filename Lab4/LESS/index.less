@@ -1,0 +1,63 @@
+//Variables
+@primary-background-color:#ffff33;
+@welcome-text-color:#e60000;
+@footer-color:#000000;
+@header-text-color:#ffffff;
+@text-color:#ffffff;
+@company-div-color:#ffffff;
+@about-div-color:#0099ff;
+
+@media screen and (max-width:99000px)
+{
+  body{
+    background-color: @primary-background-color;
+  }
+  ul{
+    list-style-type: none;
+  }
+  header ul
+  {
+    display: flex;
+    flex-direction: row;
+    margin:3% 4%;
+    justify-content: center;
+  }
+
+  button
+  {
+    margin: 2em;
+    background-color: @welcome-text-color;
+    width:90%;
+    height: 35%;
+    text-decoration: none;
+    color: @text-color;
+    border: 3px solid white;
+    padding:3%;
+  }
+  button:hover{
+  color:yellow;
+  border: 3px solid black;
+    cursor: grab;
+  }
+  #welcome{
+    text-align: center;
+    text-decoration: none;
+    color:@welcome-text-color;
+    font-size: 64px;
+  }
+  .contact_form{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  footer{
+    background-color: @footer-color;
+    position: relative;
+    height: 15%;
+    margin-top:-15%;
+    clear:both;
+  }
+  #name_input{
+    width:10em;
+  }
+}
