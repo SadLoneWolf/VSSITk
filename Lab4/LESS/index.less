@@ -7,7 +7,7 @@
 @company-div-color:#ffffff;
 @about-div-color:#0099ff;
 
-@media screen and (max-width:99000px)
+@media screen and (max-width:1980px)
 {
   body{
     background-color: @primary-background-color;
@@ -23,41 +23,117 @@
     justify-content: center;
   }
 
-  button
-  {
-    margin: 2em;
-    background-color: @welcome-text-color;
-    width:90%;
-    height: 35%;
-    text-decoration: none;
-    color: @text-color;
-    border: 3px solid white;
-    padding:3%;
-  }
-  button:hover{
-  color:yellow;
-  border: 3px solid black;
-    cursor: grab;
-  }
+
+
   #welcome{
     text-align: center;
     text-decoration: none;
     color:@welcome-text-color;
     font-size: 64px;
   }
-  .contact_form{
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-  }
-  footer{
-    background-color: @footer-color;
-    position: relative;
-    height: 15%;
-    margin-top:-15%;
-    clear:both;
-  }
+
   #name_input{
     width:10em;
   }
+  .about{
+    color:white;
+    background-color:powderblue;
+    hight:3em;
+    width:auto;
+    margin-top:40%;
+  }
+  h3{
+    text-align: center;
+    font-size: 6em;
+    font-family: monospace;
+    font-style: normal;
+  }
+  #avatar{
+    margin-left: 3%;
+    margin-bottom:5%;
+    width:37%;
+    height:37%;
+  }
+  p{
+    text-align: justify;
+    font-size: 2.3em;
+    margin-left:2%;
+    margin-right:2%;
+  }
+  section{
+    display:flex;
+    flex-direction: row;
+  }
+  .team{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    margin-top: 9%;
+  }
+  .card{
+    display: flex;
+    background-color:#ebe9e6;
+    flex-direction: column;
+    height: 60%;
+    width: 80%;
+    margin: 3em;
+  }
+  #bartender{
+    width: 50%;
+    height:50%;
+    align-self: center;
+    border-radius:100%
+  }
+h4{
+  text-align: center;
+  font-size: 3em;
+  font-family: monospace;
+  font-style: normal;
+}
+#aboutBar{
+  text-align: justify;
+  font-size: 1.3em;
+  margin-left:2%;
+  margin-right:2%
+}
+.inputs{
+  display: flex;
+  flex-direction: column;
+  margin:0 auto;
+  justify-content: center;
+  background-color: white;
+  width:40%;
+  padding:3%;
+}
+#mailing_list{
+  margin-top:5%;
+  background-color:orange;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+}
+
+label{
+  text-decoration:none;
+  font-size: 1.3em;
+  font-family:fantasy;
+}
+.field{
+  width: 37%
+  height:auto;
+  margin:1.3%;
+  padding:auto;
+  border: 1px solid blue;
+  font-family: fantasy;
+  font-size: 1.3em;
+  font-weight: lighter;
+  font-variant: normal;
+
+}
+#submit{
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+}
+
 }

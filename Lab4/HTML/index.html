@@ -9,24 +9,74 @@
 </head>
 <body>
     <link rel="stylesheet" href="../CSS/index.css">
+    <script type="text/javascript" src="../JavaScript/index.js">
+
+    </script>
     <header>
         <ul>
-          <li> <button type="button" class="btn btn-danger">Контакт</button></li>
-          <li><button type="button" class="btn btn-danger">О нами</button> </li>
-          <li> <button type="button" class="btn btn-danger">Команда</button></li>
+          <a href="#submit" class = "button">Контакт</a>
+          <a href="#about"  class = "button">О нами</a>
+          <a href="#team"  class = "button">Команда</a>
         </ul>
     </header>
     <div class="root">
-      <div id="welcome">
+        <div id="welcome">
         <h2>Кофейная Блиц</h2>
       </div>
+
       <div class="about">
+          <h3 id="about">О НАМИ</h3>
+        <section>
+          <img src="../Images/avatar.jpg" alt="" id="avatar">
+          <p>
+            Почему некоторые кофейни не пользуются успехом у всех клиентов, а некоторые остаются без них? Как заставить людей приходить к вам и возвращаться к вам снова и снова? Что делает кофейню успешной? Успешная кофейня не возникает просто так, и есть много причин для успешной кофейни.
+            Мы еще студенты. И да, мы по ушам влюблены в кофе. Будем очень рады Вас приветсвовать в наше сказочное королевство хорошего вкуса и джеза.
+          </p>
+        </section>
+      </div>
+      <div class="team" id="team">
         <div class="card">
-          <img src="../Images/bartender.jpg" alt="">
+          <img src="../Images/bartender.jpg" alt="" id="bartender">
+          <h4>Андрей</h4>
+          <p id = "aboutBar">
+          Андрей заказал в баре бутылку виски, а уже бутылка виски в Андрее заказала еще одну и песню "Офицеры" семь раз подряд.</p>
+        </div>
+        <div class="card">
+          <img src="../Images/waiter.jpg" alt="" id="bartender">
+          <h4>Диана</h4>
+          <p id = "aboutWaiter"> Наш барист. Справится с любим Вашим желанием.
+            Медицинская книжка с записью о возможности работы в сфере обслуживания и торговли.
+                      Сертификат об окончании курсов подготовки официантов.
+                      Приятная внешность.
+                      Опыт и знание технологии разделки рыбы.
+                      Трудолюбие, аккуратность, коммуникабельность, умение создавать атмосферу гостеприимства.
+                      Продвинутый пользователь ПК, компьютерных программ Microsoft Word, Excel, имею опыт работы в 1С Общепит и программе R-Keeper.</p>
+        </div>
+        <div class="card">
+          <img src="../Images/bartender.jpg" alt="" id="bartender">
+          <h4>Марк</h4>
+          <p id = "aboutMAnage"> Наш барист. Справится с любим Вашим желанием.</p>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="form_action" id="mailing_list">
+          <h3>Подпишитесь на уведомления !</h3>
+          <form class="" action="#" >
+            <div class="inputs">
+              <label for="">Ф.И.О</label>
+              <input type="text" name="" value="" placeholder="Ф.И.О" class="field">
+            </div>
+            <div class="inputs">
+              <label for="">Адресс эллектронной почти</label>
+              <input type="mail" name="" value="" placeholder="sample@mail.com" class="field">
+            </div>
+            <div class="" id="submit">
+                <button class = "submit_button" >Подписка</button>
+            </div>
+
+          </form>
         </div>
       </div>
     </div>
-    <footer>
-  
-    </footer>
+
 </html>
