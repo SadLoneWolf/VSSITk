@@ -60,4 +60,24 @@
     width: 40%;
     height: 40%;
   }
+
+  /* .product{
+    display: none;
+  }
+   .product_list{
+    display: none;
+  }  */
+
+  .food{
+    display: none;
+  }
+  .coffee{
+    display:none;
+  }
+  .salad{
+    display: none;
+  }
+  .sodas{
+    display:none;
+  }
 }
