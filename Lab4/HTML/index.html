@@ -16,10 +16,10 @@
 
     <header >
         <ul id="header_menu">
-          <li><a href="#submit" class = "button">Контакт</a></li>
-         <li> <a href="#about"  class = "button">О нами</a></li>
-        <li>   <a href="#team"  class = "button">Команда</a></li>
-         <li> <a href="order.html" class="button">Заказать</a></li>
+          <a href="#submit" class = "button">Контакт</a>
+          <a href="#about"  class = "button">О нами</a>
+           <a href="#team"  class = "button">Команда</a>
+         <a href="order.html" class="button">Заказать</a>
         </ul>
         <div id="mobile_btn">
         <a href="javascript:void(0);" class="icon" onclick="mobileMenu()">
@@ -70,21 +70,22 @@
       <div class="footer">
         <div class="form_action" id="mailing_list">
           <h3>Подпишитесь на уведомления !</h3>
-          <form class="" action="#" >
+          <form id="sub_form" action="#" >
             <div class="inputs">
               <label for="">Ф.И.О</label>
-              <input type="text" name="" value="" placeholder="Ф.И.О" class="field">
+              <input type="text" name="name" value="" placeholder="Ф.И.О" class="field" id = 'Name'>
             </div>
             <div class="inputs">
               <label for="">Адресс эллектронной почти</label>
-              <input type="mail" name="" value="" placeholder="sample@mail.com" class="field">
+              <input type="mail" name="mail" value="" placeholder="sample@mail.com" class="field" id = 'mail'>
             </div>
             <div class="" id="submit">
-                <button class = "submit_button" onclick="alert('Вы успешно подписались')">Подписка</button>
+                <button class = "submit_button" >Подписка</button>
             </div>
 
           </form>
         </div>
+        <div id="Error"></div>
       </div>
     </div>  
     <script src="../JavaScript/index_animation.js"></script>    

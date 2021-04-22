@@ -10,16 +10,17 @@
 </head>
 <body>
    <link rel="stylesheet" href="../CSS/order.css">
+   <script src="../JavaScript/hide_order.js"></script>
    <header >
      <a href="index.html" class="button"><</a>
 </header>
       <div class="menu">
-        <a href="" class="submit_button">Кофе</a>
-        <a href="" class="submit_button">Салад</a>
-        <a href="" class="submit_button">Напитки</a>
-        <a href="" class="submit_button">Вкусное</a>
+        <a href="" class="submit_button" id="coffe" onclick="toggleCoffe()">Кофе</a>
+        <a href="" class="submit_button" id = "salad" onclick="toggleSalad()">Салад</a>
+        <a href="" class="submit_button" id="juice" onclick="toggleJuice()">Напитки</a>
+        <a href="" class="submit_button" id="cookies" onclick="toggleCookies()">Вкусное</a>
       </div>
-      <div class="coffee">
+      <div class="coffee" id="coffe_list">
       <div class="product_list">
         <div class="product">
           <img src="../Images/Coffes/capuccino.jpg" alt="">
@@ -71,7 +72,7 @@
         </div>
       </div>
     </div>
-    <div class="salad">
+    <div class="salad" id="salad_list">
       <div class="product_list">
         <div class="product">
           <img src="../Images/Salads/blueberries.jpg" alt="">
@@ -115,7 +116,7 @@
         </div>
       </div>
     </div>
-    <div class="sodas">
+    <div class="sodas" id="soda_list">
 <div class="product_list">
   <div class="product">
     <img src="../Images/Sodas and teas/black tea.jpg" alt="">
@@ -159,7 +160,7 @@
   </div>
 </div>
 </div>
-<div class="food">
+<div class="food" id="cookie_list">
 <div class="product_list">
   <div class="product">
     <img src="../Images/Warm food/burger.jpg" alt="">

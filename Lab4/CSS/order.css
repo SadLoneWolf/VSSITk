@@ -61,23 +61,17 @@
     height: 40%;
   }
 
-  /* .product{
-    display: none;
-  }
-   .product_list{
-    display: none;
-  }  */
 
-  .food{
+  #cookie_list{
     display: none;
   }
-  .coffee{
+  #coffe_list{
     display:none;
   }
-  .salad{
+  #salad_list{
     display: none;
   }
-  .sodas{
+  #soda_list{
     display:none;
   }
 }
