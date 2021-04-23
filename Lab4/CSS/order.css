@@ -44,23 +44,27 @@
   img {
     width: 40%;
     height: 40%;
+    display: flex;
+    justify-content: center;
   }
   .product_list {
     background-color: white;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    width: 70%;
   }
   .product {
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    text-align: left;
+    text-align: center;
     text-decoration: none;
     font-family: fantasy;
     font-size: 72%;
     width: 40%;
     height: 40%;
   }
-
 
   #cookie_list{
     display: none;
