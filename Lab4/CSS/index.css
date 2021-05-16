@@ -1,0 +1,341 @@
+@media screen and (min-width: 1700px) {
+  body {
+    background-color: #ffff33;
+  }
+  ul {
+    list-style-type: none;
+  }
+  header ul {
+    display: flex;
+    flex-direction: row;
+    margin: 3% 4%;
+    justify-content: center;
+  }
+  #mobile_btn{
+    display: none;
+  }
+  .icon{
+    display: none;
+  }
+  .submit_button {
+    background-color: black;
+    color:white;
+    border:2px solid white;
+    padding:1%;
+    height: 100%;
+    width:10%;
+    margin:1%;
+    font-size: 1em;
+    font-style: normal;
+    font-family: fantasy;
+  }
+  .submit_button:hover{
+    background-color: white;
+    color:black;
+    border:2px solid white;
+    padding:1%;
+    height: 100%;
+    width:10%;
+    margin:1%;
+  }
+  .button{
+    margin:2%;
+    border: 2px solid white;
+    font-style: normal;
+    font-variant: normal;
+    font-family: fantasy;
+    color:white;
+    text-decoration: none;
+    background-color: red;
+    padding:1%;
+  }
+  #welcome {
+    text-align: center;
+    text-decoration: none;
+    color: #e60000;
+    font-size: 64px;
+  }
+  #name_input {
+    width: 10em;
+  }
+  .about {
+    color: white;
+    background-color: powderblue;
+    width: auto;
+    margin-top: 40%;
+  }
+  h3 {
+    text-align: center;
+    font-size: 6em;
+    font-family: monospace;
+    font-style: normal;
+  }
+  #avatar {
+    margin-left: 3%;
+    margin-bottom: 5%;
+    width: 37%;
+    height: 37%;
+  }
+  p {
+    text-align: justify;
+    font-size: 2.3em;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  section {
+    display: flex;
+    flex-direction: row;
+  }
+  .team {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    margin-top: 9%;
+  }
+  .card {
+    display: flex;
+    background-color: #ebe9e6;
+    flex-direction: column;
+    height: 60%;
+    width: 80%;
+    margin: 3em;
+  }
+  #bartender {
+    width: 50%;
+    height: 50%;
+    align-self: center;
+    border-radius: 100%;
+  }
+  h4 {
+    text-align: center;
+    font-size: 3em;
+    font-family: monospace;
+    font-style: normal;
+  }
+  #aboutBar {
+    text-align: justify;
+    font-size: 1.3em;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .inputs {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    background-color: white;
+    width: 40%;
+    padding: 3%;
+  }
+  #mailing_list {
+    margin-top: 5%;
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  label {
+    text-decoration: none;
+    font-size: 1.3em;
+    font-family: fantasy;
+  }
+  .field {
+    width: 37%;
+  height:auto;
+    margin: 1.3%;
+    padding: auto;
+    border: 1px solid blue;
+    font-family: fantasy;
+    font-size: 1.3em;
+    font-weight: lighter;
+    font-variant: normal;
+  }
+  #submit {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  #Error{
+    background-color: #ec163a;
+    color: azure;
+    text-align: center;
+    font-family: fantasy;
+    font-size: 2em;
+  }
+}
+
+@media  screen and (max-width:800px) {
+  body {
+    background-color: #ffff33;
+  }
+  ul {
+    list-style-type: none;
+  }
+  header ul {
+    display: flex;
+    flex-direction: column;
+    margin: 3% 4%;
+    justify-content: left;
+  }
+  #header_menu{
+    display: none;
+    margin-top: 0.7 em;
+    margin-bottom:0.7em;
+  }
+  #moblie_btn{
+    display: block;
+    width: 10%;
+    justify-content: right;
+  }
+  .icon{
+    display: flex;
+    flex-direction: row-reverse;
+
+  }
+  .submit_button {
+    background-color: black;
+    color:white;
+    border:2px solid white;
+    padding:1%;
+    height: 100%;
+    width:50%;
+    margin:1%;
+    font-size: 1em;
+    font-style: normal;
+    font-family: fantasy;
+  }
+  .submit_button:hover{
+    background-color: white;
+    color:black;
+    border:2px solid white;
+    padding:1%;
+    height: 100%;
+    width:100%;
+    margin:1%;
+  }
+  .button{
+    margin:2%;
+    border: 2px solid white;
+    font-style: normal;
+    font-variant: normal;
+    font-family: fantasy;
+    color:white;
+    text-decoration: none;
+    background-color: red;
+    padding:1%;
+  }
+  #welcome {
+    text-align: center;
+    text-decoration: none;
+    color: #e60000;
+    font-size: 3em;
+  }
+  #name_input {
+    width: 10em;
+  }
+  .about {
+    color: white;
+    background-color: powderblue;
+    width: auto;
+    margin-top: 40%;
+  }
+  h3 {
+    text-align: center;
+    font-size: 6em;
+    font-family: monospace;
+    font-style: normal;
+  }
+  #avatar {
+    width:60%;
+    margin:auto;
+    display: block;
+    width: 37%;
+    height: 37%;
+  }
+  p {
+    text-align: justify;
+    font-size: 2.3em;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+  }
+  .team {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin-top: 9%;
+  }
+  .card {
+    display: flex;
+    background-color: #ebe9e6;
+    flex-direction: column;
+    height: 60%;
+    width: 80%;
+    margin: 3em;
+  }
+  #bartender {
+    width: 50%;
+    height: 50%;
+    align-self: center;
+    border-radius: 100%;
+  }
+  h4 {
+    text-align: center;
+    font-size: 3em;
+    font-family: monospace;
+    font-style: normal;
+  }
+  #aboutBar {
+    text-align: justify;
+    font-size: 1.3em;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .inputs {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    background-color: white;
+    width: 40%;
+    padding: 3%;
+  }
+  #mailing_list {
+    margin-top: 5%;
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  label {
+    text-decoration: none;
+    font-size: 1.3em;
+    font-family: fantasy;
+  }
+  .field {
+    width: 37%;
+  height:auto;
+    margin: 1.3%;
+    padding: auto;
+    border: 1px solid blue;
+    font-family: fantasy;
+    font-size: 1.3em;
+    font-weight: lighter;
+    font-variant: normal;
+  }
+  #submit {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  #Error{
+    background-color: #ec163a;
+    color: azure;
+    text-align: center;
+    font-family: fantasy;
+    font-size: 2em;
+  }
+}
