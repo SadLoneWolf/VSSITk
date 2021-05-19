@@ -6,122 +6,152 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
        <title>Заказать</title>
        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
-<script src="../JavaScript/hide_order.js"></script>
-</head>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!---JQery--->
+       <script src="../JavaScript/hide_order.js"></script>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+       <script src="../JavaScript/order.js"></script>
 <body>
    <link rel="stylesheet" href="../CSS/order.css">
    <header >
-     <a href="index.html" class="button"><</a>
+     <a href="index.html" class="btn btn-danger"><</a>
 </header>
-      <div class="menu">
-        <button href="" class="submit_button" id="coffe" onclick="toggleCoffe()">Кофе</button>
-        <button href="" class="submit_button" id = "salad" onclick="toggleSalad()">Салад</button>
-        <button href="" class="submit_button" id="juice" onclick="toggleJuice()">Напитки</button>
-        <button href="" class="submit_button" id="cookies" onclick="toggleCookies()">Вкусное</button>
+      <div id="header_menu">
+        <button href="" class="btn btn-danger" id="coffe" onclick="toggleCoffe()">Кофе</button>
+        <button href="" class="btn btn-danger" id = "salad" onclick="toggleSalad()">Салад</button>
+        <button href="" class="btn btn-danger" id="juice" onclick="toggleJuice()">Напитки</button>
+        <button href="" class="btn btn-danger" id="cookies" onclick="toggleCookies()">Вкусное</button>
+       
+      </div>
+      <div id="mobile_btn">
+        <a href="javascript:void(0);" class="icon" onclick="mobileMenu()">
+          <i class="fa fa-bars"></i>
+        </a>
       </div>
       <div class="coffee" id="coffe_list">
       <div class="product_list">
-        <div class="product">
+        <div class="product"data-id="deutch">
+          <h2 id="deutch_caffe" >Дойчь каффе</h2>
           <img src="../Images/Coffes/capuccino.jpg" alt="">
-        <button class = "submit_button" >Купить</button>
+        <button type="button" class="btn btn-primary" onclick="insert_deutch()">Купить</button>
         </div>
-        <div class="product">
+        <div class="product"data-id="espresso">
+          <h2 id="espresso_caffe" >Эспрессо</h2>
           <img src="../Images/Coffes/espresso.jpg" alt="">
-        <button class = "submit_button" >Купить</button>
+        <button type="button" class="btn btn-primary" onclick="insert_espresso()">Купить</button>
         </div>
-        <div class="product">
+        <div class="product" data-id="ice_caffe">
+          <h2 id="ice_caffe">Айс кофе</h2>
           <img src="../Images/Coffes/iced coffe.jpg" alt="">
-        <button class = "submit_button" >Купить</button>
+        <button type="button" class="btn btn-primary " onclick=" insert_ice()">Купить</button>
         </div>
-        <div class="product">
+        <div class="product"data-id="capuchiono">
+          <h2 id="kapuchino" >Капучино</h2>
           <img src="../Images/Coffes/kapuchino.jpg" alt="">
-        <button class = "submit_button" >Купить</button>
+        <button type="button" class="btn btn-primary" onclick="capuchino_insert()">Купить</button>
         </div>
-        <div class="product">
+        <div class="product" data-id="mocha">
+          <h2 id="mocha_caffe">Кофе Мока</h2>
           <img src="../Images/Coffes/Mocha.jpg" alt="">
-        <button class = "submit_button" >Купить</button>
+        <button type="button" class="btn btn-primary" onclick="insert_mocha()">Купить</button>
         </div>
-        <div class="product">
+        <div class="product" data-id="nes">
+          <h2 id="caffe_nes">Нес кофе</h2>
           <img src="../Images/Coffes/nes.jpg" alt="">
-        <button class = "submit_button" >Купить</button>
+          <button type="button" class="btn btn-primary" onclick="insert_nes()">Купить</button>
         </div>
       </div>
     </div>
     <div class="salad" id="salad_list">
       <div class="product_list">
-        <div class="product">
+        <div class="product" data-id="blueberries">
+          <h2 id="blueberries">Синий салад</h2>
           <img src="../Images/Salads/blueberries.jpg" alt="">
-        <button class = "submit_button" >Купить</button>
+        <button type="button" class="btn btn-primary" onclick="insert_blueberries()">Купить</button>
         </div>
-        <div class="product">
+        <div class="product" data-id="caesar">
+          <h2 id="caesar">Цезарь салад</h2>
           <img src="../Images/Salads/caesar salad.jpg" alt="">
-        <button class = "submit_button" >Купить</button>
+        <button type="button" class="btn btn-primary" onclick="insert_salad()">Купить</button>
         </div>
-        <div class="product">
+        <div class="product" data-id="greek">
+          <h2 id="greek">Салад греческий</h2>
           <img src="../Images/Salads/Greek salad.jpg" alt="">
-        <button class = "submit_button" >Купить</button>
+        <button type="button" class="btn btn-primary" onclick="insert_greek()">Купить</button>
         </div>
-        <div class="product">
+        <div class="product" data-id="italian">
+          <h2 id="italian">Салад италиянский</h2>
           <img src="../Images/Salads/italian salad.jpg" alt="">
-        <button class = "submit_button" >Купить</button>
+          <button type="button" class="btn btn-primary" onclick="insert_italian()">Купить</button>
         </div>
-        <div class="product">
+        <div class="product" data-id="russian">
+          <h2 id="russian">Салад с майонезом</h2>
           <img src="../Images/Salads/russian salad.jpg" alt="">
-        <button class = "submit_button" >Купить</button>
+          <button type="button" class="btn btn-primary" onclick="insert_mayo()">Купить</button>
         </div>
       </div>
     </div>
     <div class="sodas" id="soda_list">
 <div class="product_list">
-  <div class="product">
+  <div class="product" data-id="tea_black">
+    <h2 id="blackTea">Черный чай</h2>
     <img src="../Images/Sodas and teas/black tea.jpg" alt="">
-   <button class = "submit_button" >Купить</button>
+    <button type="button" class="btn btn-primary" onclick="insert_slave()">Купить</button>
   </div>
-  <div class="product">
+  <div class="product" data-id="cola">
+    <h2 id="cola">Кола</h2>
     <img src="../Images/Sodas and teas/cola.jpg" alt="">
-   <button class = "submit_button" >Купить</button>
+    <button type="button" class="btn btn-primary"onclick = "insert_cola()">Купить</button>
   </div>
-  <div class="product">
+  <div class="product" data-id="fanta">
+    <h2 id="fanta">Фанта</h2>
     <img src="../Images/Sodas and teas/fanta.jpg" alt="">
-   <button class = "submit_button" >Купить</button>
+   <button type="button" class="btn btn-primary" onclick = "insert_fanta()">Купить</button>
   </div>
-  <div class="product">
+  <div class="product" data-id="green_tea">
+    <h2 id="green_tea" >Зеленый чай</h2>
     <img src="../Images/Sodas and teas/green tea.jpg" alt="">
-   <button class = "submit_button" >Купить</button>
+    <button type="button" class="btn btn-primary" onclick="insert_green()">Купить</button>
   </div>
-  <div class="product">
+  <div class="product" data-id="sprite">
+    <h2 id="sprite" >Спрайт</h2>
     <img src="../Images/Sodas and teas/sprite.png" alt="">
-   <button class = "submit_button" >Купить</button>
+    <button type="button" class="btn btn-primary" onclick="insert_sprite()">Купить</button>
   </div>
 </div>
 </div>
 <div class="food" id="cookie_list">
 <div class="product_list">
-  <div class="product">
+  <div class="product" data-id="burger">
+    <h2 id="burger">Бургер</h2>
     <img src="../Images/Warm food/burger.jpg" alt="">
-   <button class = "submit_button" >Купить</button>
+   <button type="button" class="btn btn-primary" onclick="insert_burger()">Купить</button>
   </div>
-  <div class="product">
+  <div class="product" data-id="cheese_cake">
+    <h2 id="cheesecake">Чиз кейк</h2>
     <img src="../Images/Warm food/cheese cake.jpg" alt="">
-   <button class = "submit_button" >Купить</button>
+   <button type="button" class="btn btn-primary" onclick="insert_cheese()">Купить</button>
   </div>
-  <div class="product">
+  <div class="product" data-id="doughnut">
+    <h2 id="doughnuts">Пончики</h2>
     <img src="../Images/Warm food/doughnuts.jpg" alt="">
-   <button class = "submit_button" >Купить</button>
+   <button type="button" class="btn btn-primary" onclick="insert_homer()">Купить</button>
   </div>
-  <div class="product">
+  <div class="product" data-id="eclair">
+    <h2 id="eclair">Эклер</h2>
     <img src="../Images/Warm food/eclair.jpg" alt="">
-   <button class = "submit_button" >Купить</button>
+   <button type="button" class="btn btn-primary" onclick="insert_eclair()">Купить</button>
   </div>
-  <div class="product">
+  <div class="product" data-id="waffles">
+    <h2 id="waffles">Вафли</h2>
     <img src="../Images/Warm food/waffles.jpg" alt="">
-   <button class = "submit_button" >Купить</button>
+   <button type="button" class="btn btn-primary" onclick="insert_waffles()">Купить</button>
   </div>
 </div>
 </div>
 <div id = "cart">
-<button class="submit_button" onclick="showCart()" >Корзина</button>
+<button class="btn btn-danger" onclick="showCart()" >Корзина</button>
 </div>
 <div id="shopping_cart"></div>
 </body>
