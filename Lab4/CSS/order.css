@@ -124,32 +124,21 @@
     margin-bottom:0.6em;
   }
 
-  #cookie_list{
+  .show{
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  #cookie_list{
     display: none;
-   
   }
   #coffe_list{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     display:none;
-  
   }
   #salad_list{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     display: none;
-   
   }
   #soda_list{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     display:none;
-
   }
 }

@@ -1,46 +1,41 @@
-function toggleCoffe(){
-    var coffe = document.getElementById('coffe_list')
-    if(coffe.style.display == "none"){
-        coffe.style.display = "flex"
-    }else{
-        coffe.style.display = "block"
-        coffe.style.display = "none"
-    }
+
+ const coffe = document.querySelector("#coffe_list")
+ const salad = document.getElementById("salad_list")
+ const cookie = document.getElementById("cookie_list")
+ const soda= document.getElementById("soda_list")
+
+function showCoffe(){
+    console.log('coffe')
+    coffe.classList.add("show")
+    salad.classList.remove("show")
+    cookie.classList.remove("show")
+    soda.classList.remove("show")
 }
 
-function toggleSalad(){
-    var salad = document.getElementById("salad_list")
-    console.log('salad')
-    if(salad.style.display == "none"){
-        salad.style.display = "flex"
-    }else{
-        salad.style.display = "block"
-        salad.style.display = "none"
-    }
+function showSalad()
+{
+    console.log("salad")
+    coffe.classList.remove("show")
+    salad.classList.add("show")
+    cookie.classList.remove("show")
+    soda.classList.remove("show")
 }
-
-function toggleJuice(){
-    var soda= document.getElementById("soda_list")
-    console.log('JUICES')
-    if(soda.style.display == "none"){
-        soda.style.display = "flex"
-    }else{
-        soda.style.display = "block"
-        soda.style.display = "none"
-    }
+function showJuice()
+{
+    console.log("juice")
+    coffe.classList.remove("show")
+    salad.classList.remove("show")
+    cookie.classList.remove("show")
+    soda.classList.add("show")
 }
-
-function toggleCookies(){
-    var cookie = document.getElementById("cookie_list")
-    console.log('cookie')
-    if(cookie.style.display == "none"){
-        cookie.style.display = "flex"
-    }else{
-        cookie.style.display = "block"
-        cookie.style.display = "none"
-    }
+function showCookie()
+{
+    console.log("cookie")
+    coffe.classList.remove("show")
+    salad.classList.remove("show")
+    cookie.classList.add("show")
+    soda.classList.remove("show")
 }
-
 
 function showCart(){
     if(window.localStorage.length === 0){
@@ -53,7 +48,7 @@ function mobileMenu(){
 
     var menu = document.getElementById('header_menu')
     if(menu.style.display == "flex"){
-        menu.style.display = "none"
+    //    menu.style.display = "none"
     }else{
         menu.style.display = "flex"
     }

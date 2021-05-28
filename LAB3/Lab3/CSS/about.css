@@ -31,7 +31,7 @@
     flex-direction: column;
   }
   #big_Img {
-    width: 50%;
+    width: 100%;
     height: 50%;
   }
   #game {
@@ -83,7 +83,7 @@
     flex-direction: column;
   }
   #big_Img {
-    width: 50%;
+    width: 100%;
     height: 50%;
   }
   #game {
@@ -165,8 +165,8 @@
     margin: auto;
   }
   #big_Img {
-    width: 30%;
-    height: 30%;
+    width: 100%;
+
   }
   #game {
     height: 32%;
