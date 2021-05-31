@@ -1,40 +1,56 @@
-
  const coffe = document.querySelector("#coffe_list")
  const salad = document.getElementById("salad_list")
  const cookie = document.getElementById("cookie_list")
  const soda= document.getElementById("soda_list")
 
+window.onclick = function(){
+   
+}
+
 function showCoffe(){
-    console.log('coffe')
-    coffe.classList.add("show")
-    salad.classList.remove("show")
-    cookie.classList.remove("show")
-    soda.classList.remove("show")
+    if (coffe.className == "show"){
+        coffe.className = " "
+    }else{
+        coffe.className = "show"
+    }
+    salad.className = " "
+    cookie.className = " "
+    soda.className = " "
 }
 
 function showSalad()
 {
-    console.log("salad")
-    coffe.classList.remove("show")
-    salad.classList.add("show")
-    cookie.classList.remove("show")
-    soda.classList.remove("show")
+    if (salad.className == "show") {
+        salad.className = " "
+    } else {
+        salad.className = "show"
+    }
+    coffe.className = " "
+    cookie.className = " "
+    soda.className = " "
 }
 function showJuice()
 {
-    console.log("juice")
-    coffe.classList.remove("show")
-    salad.classList.remove("show")
-    cookie.classList.remove("show")
-    soda.classList.add("show")
+    if (soda.className == "show") {
+        soda.className = " "
+    } else {
+        soda.className = "show"
+    }
+     coffe.className = " "
+    salad.className = " "
+    cookie.className = " "
+
 }
 function showCookie()
 {
-    console.log("cookie")
-    coffe.classList.remove("show")
-    salad.classList.remove("show")
-    cookie.classList.add("show")
-    soda.classList.remove("show")
+    if (cookie.className == "show") {
+        cookie.className = " "
+    } else {
+        cookie.className = "show"
+    }
+     coffe.className = " "
+    salad.className = " "
+    soda.className = " "
 }
 
 function showCart(){
@@ -47,10 +63,10 @@ alert('Заказ оформлен!')
 function mobileMenu(){
 
     var menu = document.getElementById('header_menu')
-    if(menu.style.display == "flex"){
-    //    menu.style.display = "none"
+    if(menu.className == " "){
+        menu.className = "mobile"
     }else{
-        menu.style.display = "flex"
+        menu.className = " "
     }
 }
 
