@@ -1,96 +1,92 @@
 @media screen and (max-width: 480px) {
   body {
-    background-color: #cdb40c;
+    background-color: #9ac011;
   }
   .menu {
-    padding: 5%;
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-  }
-  #big_intro {
-    font-size: small;
-    font-family: cursive;
-    font-style: normal;
-    color: #cd0c0c;
-  }
-  #intro {
-    background-color: rgba(226, 141, 29, 0.658);
-    margin-left: 350px;
-    margin-right: 350px;
-  }
-  #small_intro {
-    font-size: small;
-    font-family: cursive;
-    font-style: normal;
-  }
-  .container {
+    padding: 2em;
     display: flex;
     flex-direction: column;
+    justify-content: left;
   }
-  h2 {
-    margin: auto;
-    margin-top: 1.3em;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: oblique;
-    font-size: xx-large;
-    color: #ee190a;
-  }
-  #big_Img {
+  #logo{
     width: 30%;
     height: 30%;
   }
-  #game {
-    height: 32%;
+  .button {
+    padding: 5%;
+    margin-top:5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ee190a;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 2ch;
+    border: 3px solid #f8eded;
+  }
+  .categories{
+    display: none;
+  }
+  img{
+    width: 100%;
+    height: 30%;
+  }
+  .container {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    color: blue;
+    font-size: large;
+    font-style: oblique;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
   }
 }
-@media screen and (min-width: 800px) {
+@media  screen and (min-width:483px) {
   body {
-    background-color: #bf3d1d;
+    background-color: #9ac011;
   }
   .menu {
-    padding: 5%;
+    padding: 2em;
     display: flex;
     flex-direction: row;
-    justify-content: left;
+    justify-content: center;
   }
-  #big_intro {
-    font-size: small;
-    font-family: cursive;
-    font-style: normal;
-    color: #cd0c0c;
-  }
-  #intro {
-    background-color: rgba(226, 141, 29, 0.658);
-    margin-left: 350px;
-    margin-right: 350px;
-  }
-  #small_intro {
-    font-size: small;
-    font-family: cursive;
-    font-style: normal;
-  }
-  .container {
-    display: flex;
-    flex-direction: column;
-  }
-  h2 {
-    margin: auto;
-    margin-top: 1.3em;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: oblique;
-    font-size: xx-large;
-    color: #ee190a;
-  }
-  #big_Img {
+  #logo{
     width: 30%;
     height: 30%;
   }
-  #game {
-    height: 32%;
+  .button {
+    margin-left: 1em;
+    padding: 5%;
+    margin-top:5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ee190a;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 2ch;
+    border: 3px solid #f8eded;
   }
+  .categories{
+    display: none;
+  }
+  img{
+    width: 100%;
+    height: 30%;
+  }
+  .container {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    color: blue;
+    font-size: large;
+    font-style: oblique;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+  }
+
 }
-@media screen and (max-width: 1300px) {
+@media screen and (min-width: 1300px) {
   .menu {
     padding: 7px;
     display: flex;
@@ -98,6 +94,14 @@
   }
   body {
     background-image: url(../Images/background.jpg);
+  }
+  .categories{
+    display: flex;
+    flex-direction: row;
+    color: blue;
+    font-size: large;
+    font-style: oblique;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   header img {
     display: block;
@@ -109,6 +113,7 @@
     height: 70px;
   }
   .button {
+    margin-left: 1em;
     padding: 7px 7px 7px 7px;
     margin-left: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -129,8 +134,8 @@
     border: 3px solid #f0d9d9;
   }
   img {
-    width: 300px;
-    height: 300px;
+    width: 33%;
+    height: 33%;
   }
   .container {
     display: flex;

@@ -1,51 +1,73 @@
-function toggleCoffe(){
-    var coffe = document.getElementById('coffe_list')
-    if(coffe.style.display == "none"){
-        coffe.style.display = "block"
-    }else{
-        coffe.style.display = "none"
-    }
+ const coffe = document.querySelector("#coffe_list")
+ const salad = document.getElementById("salad_list")
+ const cookie = document.getElementById("cookie_list")
+ const soda= document.getElementById("soda_list")
+
+window.onclick = function(){
+   
 }
 
-function toggleSalad(){
-    var salad = document.getElementById("salad_list")
-    console.log('salad')
-    if(salad.style.display == "none"){
-        salad.style.display = "block"
+function showCoffe(){
+    if (coffe.className == "show"){
+        coffe.className = " "
     }else{
-        salad.style.display = "none"
+        coffe.className = "show"
     }
+    salad.className = " "
+    cookie.className = " "
+    soda.className = " "
 }
 
-function toggleJuice(){
-    var soda= document.getElementById("soda_list")
-    console.log('JUICES')
-    if(soda.style.display == "none"){
-        soda.style.display = "block"
-    }else{
-        soda.style.display = "none"
+function showSalad()
+{
+    if (salad.className == "show") {
+        salad.className = " "
+    } else {
+        salad.className = "show"
     }
+    coffe.className = " "
+    cookie.className = " "
+    soda.className = " "
 }
-
-function toggleCookies(){
-    var cookie = document.getElementById("cookie_list")
-    console.log('cookie')
-    if(cookie.style.display == "none"){
-        cookie.style.display = "block"
-    }else{
-        cookie.style.display = "none"
+function showJuice()
+{
+    if (soda.className == "show") {
+        soda.className = " "
+    } else {
+        soda.className = "show"
     }
-}
+     coffe.className = " "
+    salad.className = " "
+    cookie.className = " "
 
-function insertInCart(){
-    
+}
+function showCookie()
+{
+    if (cookie.className == "show") {
+        cookie.className = " "
+    } else {
+        cookie.className = "show"
+    }
+     coffe.className = " "
+    salad.className = " "
+    soda.className = " "
 }
 
 function showCart(){
     if(window.localStorage.length === 0){
         alert('Корзина пуста !')
     }else{
-        var cart = document.getElementById("shopping_cart")
-        cart.innerText = window.localStorage.getItem('product_id')
+alert('Заказ оформлен!')
     }
 }
+function mobileMenu(){
+
+    var menu = document.getElementById('header_menu')
+    if(menu.className == " "){
+        menu.className = "mobile"
+    }else{
+        menu.className = " "
+    }
+}
+
+// Working with cart

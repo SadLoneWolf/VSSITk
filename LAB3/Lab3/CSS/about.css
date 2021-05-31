@@ -1,133 +1,107 @@
 @media screen and (max-width: 480px) {
   body {
-    background-color: #bf3d1d;
+    background-color: #e0dd0f;
   }
-  .menu {
-    border: 2px #ede4e1;
-    width: 20%;
-    height: 20%;
-  }
-  .button {
-    border: #ede4e1 3px solid;
-    padding: 5%,5%;
-    margin: 7px;
-    display: flex;
-    float: left;
-    font-style: normal;
-    font-variant: normal;
-    font-size: 20%;
-    color: #ede4e1;
-  }
-  .button::after {
-    color: black;
-  }
-  #big_intro {
-    font-size: small;
-    font-family: cursive;
-    font-style: normal;
-    color: #cea10e;
-  }
-  #intro {
-    background-color: rgba(226, 141, 29, 0.658);
-    margin-left: 350px;
-    margin-right: 350px;
-  }
-  #small_intro {
-    font-size: small;
-    font-family: cursive;
-    font-style: normal;
-  }
-  .container {
-    display: flex;
-    flex-direction: row;
-  }
-  h2 {
-    margin: auto;
-    margin-top: 1.3em;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: oblique;
-    font-size: xx-large;
-    color: #65ee0a;
-  }
-  #big_Img {
+   #logo{
     width: 30%;
     height: 30%;
   }
-  #game {
-    height: 32%;
-  }
-  #logo {
-    width: 15%;
-    height: 15%;
+  .menu {
+    padding: 2px;
     display: flex;
-    float: right;
-    border: 1px solid black;
+    flex-direction: column;
+    justify-content: left;
+    
+  }
+  .button {
+    padding: 7px 7px 7px 7px;
+    margin-left: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ee190a;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 30px;
+    border: 3px solid #f8eded;
+  }
+  h2 {
+    display: none;
+  }
+  .imges{
+    display: flex;
+    flex-direction: column;
+  }
+  #big_Img {
+    width: 100%;
+    height: 50%;
+  }
+  #game {
+    height: 50%;
+  }
+  #small_intro {
+    font-size: 1em;
+    font-family: cursive;
+    font-style: italic;
+  }
+  #big_intro {
+    font-size: 3ch;
+    font-family: cursive;
+    font-style: italic;
+    color: rgba(238, 224, 32, 0.966);
+  }
+  #intro {
+    background-color: rgba(226, 141, 29, 0.658);
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (min-width:483px) {
   body {
-    background-color: #bf3d1d;
+    background-color: #e0dd0f;
   }
-  .menu {
-    border: 2px #ede4e1;
-    width: 20%;
-    height: 20%;
-  }
-  .button {
-    border: #ede4e1 3px solid;
-    padding: 5%,5%;
-    margin: 7px;
-    display: flex;
-    float: left;
-    font-style: normal;
-    font-variant: normal;
-    font-size: 20%;
-    color: #ede4e1;
-  }
-  .button::after {
-    color: black;
-  }
-  #big_intro {
-    font-size: small;
-    font-family: cursive;
-    font-style: normal;
-    color: #cea10e;
-  }
-  #intro {
-    background-color: rgba(226, 141, 29, 0.658);
-    margin-left: 350px;
-    margin-right: 350px;
-  }
-  #small_intro {
-    font-size: small;
-    font-family: cursive;
-    font-style: normal;
-  }
-  .container {
-    display: flex;
-    flex-direction: row;
-  }
-  h2 {
-    margin: auto;
-    margin-top: 1.3em;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: oblique;
-    font-size: xx-large;
-    color: #78ee0a;
-  }
-  #big_Img {
+   #logo{
     width: 30%;
     height: 30%;
   }
-  #game {
-    height: 32%;
-  }
-  #logo {
-    width: 15%;
-    height: 15%;
+  .menu {
+    padding: 2em;
     display: flex;
-    float: right;
-    border: 1px solid black;
+    justify-content: left;
+  }
+  .button {
+    padding: 7px 7px 7px 7px;
+    margin-left: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ee190a;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 30px;
+    border: 3px solid #f8eded;
+  }
+  h2 {
+    display: none;
+  }
+  .imges{
+    display: flex;
+    flex-direction: column;
+  }
+  #big_Img {
+    width: 100%;
+    height: 50%;
+  }
+  #game {
+    height: 50%;
+  }
+  #small_intro {
+    font-size: 2em;
+    font-family: cursive;
+    font-style: italic;
+  }
+  #big_intro {
+    font-size: 3ch;
+    font-family: cursive;
+    font-style: italic;
+    color: rgba(238, 224, 32, 0.966);
+  }
+  #intro {
+    background-color: rgba(226, 141, 29, 0.658);
   }
 }
 @media screen and (min-width: 1024px) {
@@ -191,8 +165,8 @@
     margin: auto;
   }
   #big_Img {
-    width: 30%;
-    height: 30%;
+    width: 100%;
+
   }
   #game {
     height: 32%;

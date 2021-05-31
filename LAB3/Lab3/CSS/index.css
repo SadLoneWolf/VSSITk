@@ -1,97 +1,83 @@
 @media screen and (max-width: 480px) {
-  body {
-    background-color: #bf3d1d;
+  body{
+    background-color: #cdb40c;
+
+    }
+    .intro{
+      text-align: center ;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 5ch;
+      border-width: 2cm;
+      color: #ffffff;
+      margin-top: 0px;
   }
-  .intro {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 40%;
-    border-width: 1cm;
-    margin-top: 0px;
-  }
-  #logo {
-    width: 15%;
-    height: 15%;
+  .menu{
+    padding: 7px;
     display: flex;
-    float: right;
-    border: 1px solid black;
+    justify-content: left;
+    flex-direction: column;
   }
-  #welcome_text {
-    font-size: 75%;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-style: oblique;
-    color: #cea10e;
-    display: contents;
-    align-content: center;
-  }
-  .menu {
-    border: 2px #ede4e1;
-    width: 20%;
-    height: 20%;
+  #logo{
+    width: 30%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
   }
   .button {
-    border: #ede4e1 3px solid;
-    padding: 5%,5%;
-    margin: 7px;
-    display: flex;
-    float: left;
+    padding: 2%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ee190a;
     font-style: normal;
-    font-variant: normal;
-    font-size: 20%;
-    color: #ede4e1;
-  }
-  .button::after {
-    color: black;
-  }
-  #welcome_text {
-    font-size: 25%;
-    font-style: normal;
-    color: #c8b932;
+    text-decoration: none;
+    font-size:2ch;
+    margin-top: 1rem;
+    border: 3px solid #f8eded;
   }
 }
-@media screen and (max-width: 800px) {
-  body {
-    background-color: #bf3d1d;
+@media screen and (min-width: 483px) {
+  img{
+    border-radius: 50%;
   }
-  #logo {
-    width: 15%;
-    height: 15%;
+  body{
+    background-color: #cdb40c;
+
+    }
+    .intro{
+      text-align: center ;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 5ch;
+      border-width: 2cm;
+      color: #ffffff;
+      margin-top: 0px;
+  }
+  .menu{
+    padding: 7px;
     display: flex;
-    float: right;
-    justify-content: right;
-    border: 1px solid black;
+    justify-content: center;
+    flex-direction: row;
   }
-  .intro {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 10%;
-    border-width: 1cm;
-    margin-top: 0px;
-  }
-  #logo {
-    width: 19%;
-    height: 19%;
-  }
-  #welcome_text {
-    font-size: 75%;
-    font-style: normal;
-    color: #c8b932;
-  }
-  .menu {
-    border: 2px #ede4e1;
+  #logo{
+    width: 30%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
   }
   .button {
-    border: #ede4e1 3px solid;
-    padding: 5%,5%;
-    margin: 7px;
-    display: flex;
-    float: left;
+    padding: 2%;
+    margin-left: 3%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ee190a;
     font-style: normal;
-    font-size: 25%;
-    color: #ede4e1;
-  }
-  .button::after {
-    color: black;
+    text-decoration: none;
+    font-size:2ch;
+    margin-top: 1rem;
+    border: 3px solid #f8eded;
   }
 }
 @media  screen and (min-width: 1024px) {
